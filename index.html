@@ -4,24 +4,20 @@ layout: default
 
 <div class="home">
 
-<a class="repo" href="{{ site.url }}/11000">
-	<img src="{{ site.url }}/assets/11000.png" />
-</a>
+  <h1 class="page-heading">Posts</h1>
 
-<a class="repo" href="{{ site.url }}/game-of-life/">
-	<img src="{{ site.url }}/assets/game-of-life.png" />
-</a>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-<a class="repo" href="{{ site.url }}/hb">
-	<img src="{{ site.url }}/assets/hb.png" />
-</a>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-<a class="repo" href="{{ site.url }}/snow">
-	<img src="{{ site.url }}/assets/snow.png" />
-</a>
-
-<a class="repo" href="{{ site.url }}/tonematrix">
-	<img src="{{ site.url }}/assets/tonematrix.png" />
-</a>
+  <!--  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
 
 </div>
