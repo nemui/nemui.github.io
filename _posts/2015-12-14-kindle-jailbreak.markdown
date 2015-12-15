@@ -2,7 +2,7 @@
 layout: post
 title:  "Kindle Jailbreak"
 date:   2015-12-14 14:38:18 +0900
-categories: kindle jailbreak
+categories: kindleberrypi kindle jailbreak
 ---
 After [downgrading our Kindle]({% post_url 2015-12-10-downgrade-kindle %}),
 we proceed to installing the jailbreak itself.
@@ -45,7 +45,8 @@ of the screen. It's done! Restart your Kindle for good measure.
 	* GAWK ([home][gawk-home]) - makes KUAL's parsing faster
 
 		Download [gawk][gawk-link] and install it just like the KUAL 
-		helper from before. Then open KUAL and press "Install" button.
+		helper from before. One additional step - open KUAL and press 
+		"Install" button.
 		
 	* BackDoorLock ([home][lock-home]) - prevents silent updates
 
