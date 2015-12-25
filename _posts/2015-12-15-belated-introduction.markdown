@@ -39,6 +39,8 @@ memory and therefore woefully incomplete:
 
 [Part 3 - Extend]({% post_url 2015-12-15-usbnetwork-extend %})
 
+[Part 4 - Finish]({% post_url 2015-12-25-kterm-hostapd %})
+
 [kindleberry-pi-post]: https://www.raspberrypi.org/blog/kindleberry-pi-the-second/
 [pi-zero]: https://www.raspberrypi.org/blog/page/2/?fish#raspberry-pi-zero
 [lynx-link]: http://lynx.invisible-island.net 
