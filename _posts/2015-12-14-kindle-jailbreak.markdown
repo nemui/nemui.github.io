@@ -2,7 +2,7 @@
 layout: post
 title:  "Kindle Jailbreak"
 date:   2015-12-14 14:38:18 +0900
-categories: kindleberrypi kindle jailbreak
+tags: kindleberrypi kindle jailbreak
 ---
 After [downgrading our Kindle]({% post_url 2015-12-10-downgrade-kindle %}),
 we proceed to installing the jailbreak itself.

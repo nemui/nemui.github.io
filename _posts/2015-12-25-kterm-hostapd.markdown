@@ -2,7 +2,7 @@
 layout: post
 title:  "Kindleberry Pi: The End"
 date:   2015-12-25 14:28:18 +0900
-categories: kindleberrypi kindle raspberrypi
+tags: kindleberrypi kindle raspberrypi
 ---
 Well, this is rather embarrassing.
 

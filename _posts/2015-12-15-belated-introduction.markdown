@@ -2,7 +2,7 @@
 layout: post
 title:  "Kindleberry Pi: Belated introduction"
 date:   2015-12-15 14:55:18 +0900
-categories: kindleberrypi kindle raspberrypi
+tags: kindleberrypi kindle raspberrypi
 ---
 This series of posts owes its existence to several things.
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "Downgrading Kindle Paperwhite (1st generation)"
 date:   2015-12-10 10:36:18 +0900
-categories: kindleberrypi kindle downgrade
+tags: kindleberrypi kindle downgrade
 ---
 First step on the way to your very own [Kindleberry Pi][kindleberry-pi] is
 downgrading your Kindle:
