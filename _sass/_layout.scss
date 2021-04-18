@@ -105,6 +105,11 @@
 .footer-heading {
     font-size: 18px;
     margin-bottom: $spacing-unit / 2;
+
+    &,
+    &:visited {
+        color: $grey-color-dark;
+    }
 }
 
 .contact-list,
