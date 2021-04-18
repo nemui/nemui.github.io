@@ -43,8 +43,12 @@ ul, ol, dl, figure,
  * Images
  */
 img {
-    max-width: 100%;
-    vertical-align: middle;
+    max-width: 100%;    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
 }
 
 
@@ -203,4 +207,15 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+/**
+* Info box
+*/
+div.info {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding: 15px 10px;
+    color: #00529b;
+    background-color: #bde5f8;
 }
