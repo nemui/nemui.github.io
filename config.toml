@@ -2,7 +2,6 @@ base_url = "https://nemui.github.io"
 
 title = "nemui"
 compile_sass = true
-description = "low-tech trickery"
 highlight_code = false
 generate_rss = false
 theme = "slim"
