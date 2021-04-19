@@ -477,3 +477,10 @@ button:active,
     font-size: 85%;
   }
 }
+
+.repos_holder {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: auto auto auto;
+  grid-gap: 20px;
+}

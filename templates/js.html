@@ -1,0 +1,12 @@
+{% extends "page.html" %}
+
+{% block content %}
+<div class="repos_holder">
+    {% for repo in ["11000", "game-of-life", "hb", "snow", "tonematrix"] %}        
+        <a class="repo" href="{{ config.base_url }}/{{ repo }}">
+            <img src="{{ current_path}}/{{ repo }}.png" />
+        </a>
+    {% endfor %}
+</div>
+{% endblock content %}
+
