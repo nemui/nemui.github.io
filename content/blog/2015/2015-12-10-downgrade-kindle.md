@@ -1,9 +1,9 @@
----
-layout: post
-title:  "Downgrading Kindle Paperwhite (1st generation)"
-date:   2015-12-10 10:36:18 +0900
-tags: kindleberrypi kindle downgrade
----
++++
+title = "Downgrading Kindle Paperwhite (1st generation)"
+
+[taxonomies]
+tags = ["kindleberrypi", "kindle", "downgrade"]
++++
 First step on the way to your very own [Kindleberry Pi][kindleberry-pi] is
 downgrading your Kindle:
 
@@ -21,10 +21,9 @@ downgrading your Kindle:
 
 4. Confirm that downgrade went well
 
-	From *Home* screen, tap *Menu*, then *Settings*.  
-From *Settings* screen, tap *Menu* again, then *Device Info*.  
-**Firmware Version:Kindle 5.4.4.2** means we are golden and ready to
-[jailbreak]({% post_url 2015-12-14-kindle-jailbreak%}).
+	From _Home_ screen, tap _Menu_, then _Settings_.  
+From _Settings_ screen, tap _Menu_ again, then _Device Info_.  
+**Firmware Version:Kindle 5.4.4.2** means we are golden and ready to [jailbreak](@/blog/2015/2015-12-14-kindle-jailbreak.md).
 
 5. Make sure your Kindle is still yours
 

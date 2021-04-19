@@ -1,16 +1,16 @@
----
-layout: post
-title:  "Kindleberry Pi: The End"
-date:   2015-12-25 14:28:18 +0900
-tags: kindleberrypi kindle raspberrypi
----
++++
+title = "Kindleberry Pi: The End"
+
+[taxonomies]
+tags = ["kindleberrypi", "kindle", "raspberrypi"]
++++
 Well, this is rather embarrassing.
 
 This project was finished almost two weeks ago, and as a result - immediately
 forgotten. I guess getting there was far more exciting than playing with the 
 resulting contraption.
 
-After the [last step]({% post_url 2015-12-15-usbnetwork-extend %}), the only 
+After the [last step](@/blog/2015/2015-12-15-usbnetwork-extend.md), the only 
 things 
 left to do are to install Kterm, create basic "extension" to automate 
 connection process and setup an access point on Raspberry Pi. With first two 
@@ -36,7 +36,7 @@ ghost characters and absence of color makes it rather hard to enjoy roguelikes
 
 For now, though, I'm content to let my Kindleberry Pi gather dust.
 
-![Kindleberry Pi](/assets/kindleberry_pi.png)
+![Kindleberry Pi](kindleberry_pi.png)
 
 [guide-link]: https://gist.github.com/rvagg/5095506
 [hostapd-link]: http://cberner.com/2013/02/03/using-hostapd-on-ubuntu-to-create-a-wifi-access-point/

@@ -1,10 +1,10 @@
----
-layout: post
-title:  "Kindle Jailbreak"
-date:   2015-12-14 14:38:18 +0900
-tags: kindleberrypi kindle jailbreak
----
-After [downgrading our Kindle]({% post_url 2015-12-10-downgrade-kindle %}),
++++
+title = "Kindle Jailbreak"
+
+[taxonomies]
+tags = ["kindleberrypi", "kindle", "jailbreak"]
++++
+After [downgrading our Kindle](@/blog/2015/2015-12-10-downgrade-kindle.md),
 we proceed to installing the jailbreak itself.
 All information was pulled from [this forum thread][jailbreak-thread].
 
