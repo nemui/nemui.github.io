@@ -423,7 +423,7 @@ button:active,
 }
 
 .post-content {
-  margin: 2rem 0;
+  margin: 2rem 20% 2rem 0;
 }
 
 /* styling for tags on homepage */
@@ -465,15 +465,15 @@ button:active,
   position: relative;
   width: 20vw;
   margin-right: -24vw;
-  font-size: 16px;
+  font-size: 90%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 799px) {
   .aside {
     display: block;
     float: none;
     margin: 5% 10% 5% 10%;
     width: 80%;
-    font-size: 15px;
+    font-size: 85%;
   }
 }
