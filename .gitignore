@@ -1,4 +1,2 @@
-_site
-.sass-cache
-.jekyll-metadatasite
-.markdown.swp
+public
+.DS_Store

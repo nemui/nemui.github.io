@@ -1,9 +1,9 @@
----
-layout: post
-title:  "Kindleberry Pi: Belated introduction"
-date:   2015-12-15 14:55:18 +0900
-tags: kindleberrypi kindle raspberrypi
----
++++
+title = "Kindleberry Pi: Belated introduction"
+
+[taxonomies]
+tags = ["kindleberrypi", "kindle", "raspberrypi"]
++++
 This series of posts owes its existence to several things.
 
 First of all, I happen to have Kindle Paperwhite 1st generation model, which has
@@ -33,13 +33,13 @@ thought process.
 So here it is, then, my journey towards Kindleberry Pi, written mostly from 
 memory and therefore woefully incomplete:
 
-[Part 1 - Downgrade]({% post_url 2015-12-10-downgrade-kindle %})
+[Part 1 - Downgrade](@/blog/2015/2015-12-10-downgrade-kindle.md)
 
-[Part 2 - Jailbreak]({% post_url 2015-12-14-kindle-jailbreak %})
+[Part 2 - Jailbreak](@/blog/2015/2015-12-14-kindle-jailbreak.md)
 
-[Part 3 - Extend]({% post_url 2015-12-15-usbnetwork-extend %})
+[Part 3 - Extend](@/blog/2015/2015-12-15-usbnetwork-extend.md)
 
-[Part 4 - Finish]({% post_url 2015-12-25-kterm-hostapd %})
+[Part 4 - Finish](@/blog/2015/2015-12-25-kterm-hostapd/index.md)
 
 [kindleberry-pi-post]: https://www.raspberrypi.org/blog/kindleberry-pi-the-second/
 [pi-zero]: https://www.raspberrypi.org/blog/page/2/?fish#raspberry-pi-zero

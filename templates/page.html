@@ -1,0 +1,13 @@
+{% extends "slim/templates/page.html" %}
+{% import "custom_macros.html" as custom_macros %}
+
+{% block content %}
+<div class="post">
+    {% block post %}
+    {{ custom_macros::post_header(page=page) }}
+    <div class="post-content">
+        {{ page.content | safe }}
+    </div>
+    {% endblock post %}
+</div>
+{% endblock content %}

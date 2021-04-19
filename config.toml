@@ -1,0 +1,23 @@
+base_url = "https://nemui.github.io"
+
+title = "nemui"
+compile_sass = true
+highlight_code = false
+generate_rss = false
+theme = "slim"
+
+taxonomies = [
+    {name = "tags", paginate_by = 5, rss = false}
+]
+
+build_search_index = false
+
+[extra]
+slim_menu = [
+    {url = "$BASE_URL/javascript-playthings", name = "js toys"},
+    {url = "$BASE_URL/tags", name = "tags"}
+]
+slim_social = [
+    {url = "https://github.com/nemui", name = "github"},
+    {url = "https://twitter.com/DmitryMamchur", name = "twitter"}
+]

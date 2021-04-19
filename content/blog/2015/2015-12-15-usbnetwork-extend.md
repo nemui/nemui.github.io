@@ -1,10 +1,10 @@
----
-layout: post
-title:  "USBNetwork and Extend"
-date:   2015-12-15 11:14:18 +0900
-tags: kindleberrypi kindle ssh raspberrypi
----
-Last time [we performed a jailbreak]({% post_url 2015-12-14-kindle-jailbreak %}) on our Kindle and installed a bunch of wonderful extensions. Now it's time to go deeper into the innards of the liberated e-reader and extend its capabilities even further.
++++
+title = "USBNetwork and Extend"
+
+[taxonomies]
+tags = ["kindleberrypi", "kindle", "ssh", "raspberrypi"]
++++
+Last time [we performed a jailbreak](@/blog/2015/2015-12-14-kindle-jailbreak.md) on our Kindle and installed a bunch of wonderful extensions. Now it's time to go deeper into the innards of the liberated e-reader and extend its capabilities even further.
 
 1. Connecting to the Kindle via SSH from Raspberry Pi
 
