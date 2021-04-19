@@ -8,6 +8,8 @@ jobs:
     steps:
       # Checkout
       - uses: actions/checkout@v2
+        with:
+          submodules: true
       # Build & deploy
       - name: Deploy to gh-pages branch
         uses: shalzz/zola-deploy-action@v0.13.0
