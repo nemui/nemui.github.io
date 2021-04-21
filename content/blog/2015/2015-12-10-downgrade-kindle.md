@@ -1,5 +1,5 @@
 +++
-title = "Downgrading Kindle Paperwhite (1st generation)"
+title = "Downgrading Kindle Paperwhite (2012)"
 
 [taxonomies]
 tags = ["kindleberrypi", "kindle", "downgrade"]
