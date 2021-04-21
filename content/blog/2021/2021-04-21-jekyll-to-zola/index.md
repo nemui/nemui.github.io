@@ -18,8 +18,8 @@ After creating a brand new site with  `zola init myblog`, I have added [Slim](ht
 I make use of [Github Actions](https://github.com/features/actions) just like in the [docs](https://www.getzola.org/documentation/deployment/github-pages/), except that checkout needs `submodules: true` due to how the theme is added as a git submodule. 
 
 ### Blog structure
-Dividing posts by year and making each year section transparent so that everything is aggregated in the parent `blog` section is super neat! The only problem I had was with [javascript playthings](@/javascript-playthings/index.md) page. To make it _not_ appear in the list of regular posts, I had to add `sort_by = "date"` to the root `_index.md`, then delete the date field from the javascript `index.md`. Oh, well!
-{{ image(url="structure.png", alt="Content folder structure", title="All posts are divided by year and make use of asset colocation") }}
+Grouping posts by year and making each year section transparent so that everything is aggregated in the parent `blog` section is super neat! The only problem I had was with [javascript playthings](@/javascript-playthings/index.md) page. To make it _not_ appear in the list of regular posts, I had to add `sort_by = "date"` to the root `_index.md`, then delete the date field from the javascript `index.md`. Oh, well!
+{{ image(url="structure.png", alt="Content folder structure", title="All posts are grouped by year and make use of asset colocation") }}
 
 ### Marginal notes
 Lifted pretty much verbatim from [here](https://kennethfriedman.org/thoughts/2019/marginal-notes/). I love them!
@@ -36,4 +36,4 @@ The second one was the most cumbersome, as I had to modify a macro that is respo
 The rest was just copying `slim.css` from `themes/slim/sass/` to `sass/` and changing what I needed.
 
 ## What's next?
-I have been toying with an idea of adding a comment section. Something suitable for a static website while being less intrusive than [Disqus](https://disqus.com/). Perhaps [Isso](https://posativ.org/isso/)? Seems like fiddling with a blog is at least just as fun as writing it.
+I have been toying with an idea of adding a comment section. Something suitable for a static website while being less intrusive than [Disqus](https://disqus.com/). Perhaps [Isso](https://posativ.org/isso/)? Seems like fiddling with a blog is at least as fun as writing it.
