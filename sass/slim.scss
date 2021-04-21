@@ -472,6 +472,12 @@ button:active,
     width: 80%;
     font-size: 85%;
   }
+  h2.post-title {
+    font-size: 1rem;
+  }
+  .post-tags, .post-date {
+    font-size: 12px;
+  }
 }
 
 .repos_holder {
