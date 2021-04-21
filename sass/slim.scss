@@ -477,6 +477,24 @@ button:active,
   }
   .post-tags, .post-date {
     font-size: 12px;
+    left: 0px;
+  }
+  .post-title a {
+    line-height: normal;
+  }
+  .post-title {
+    margin-bottom: auto;
+  }
+  .post-title:after,
+  .post-title a:after,
+  .post-title a:before,
+  .post-title a:hover:before,
+  .post-title a:hover:after {
+    display: none;
+  }
+  .post-header {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
