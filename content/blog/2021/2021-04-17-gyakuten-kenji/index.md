@@ -1,9 +1,16 @@
 +++
 title = "Ace Attorney Investigations: Miles Edgeworth"
+updated = 2021-05-07
 
 [taxonomies]
 tags = ["games", "Japanese", "Ace Attorney"]
 +++
+### Updated on 2021-05-07
+
+It is finished! The last chapter of Investigations was certainly the longest and the most complex of the bunch, connecting all of the previous cases and culminating in an epic confrontation. A word of advice though - do not take 2-week breaks from an adventure game in the middle of its last chapter - getting back into the thick of it can be a pain! Nevertheless, Investigations have been a pleasure to work through till the very end. It felt like going on an adventure, meeting new friends and making good memories along the way.
+
+---
+
 I have been playing [Ace Attorney](https://en.wikipedia.org/wiki/Ace_Attorney) games a lot lately.  
 This post is about the series as a whole as well as "Ace Attorney Investigations: Miles Edgeworth"{{ aside (text="Original title '逆転検事' translates to 'Turnabout Prosecutor'") }} in particular.  
 
