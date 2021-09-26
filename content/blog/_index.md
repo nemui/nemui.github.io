@@ -1,6 +1,4 @@
 +++
-paginate_by = 10
+paginate_by = 5
 paginate_reversed = true
-transparent = true
-redirect_to = "/"
 +++

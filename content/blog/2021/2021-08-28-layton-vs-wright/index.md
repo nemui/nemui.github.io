@@ -3,6 +3,9 @@ title = "Professor Layton vs. Phoenix Wright: Ace Attorney"
 
 [taxonomies]
 tags = ["games", "Japanese", "Ace Attorney"]
+
+[extra]
+comments = true
 +++
 
 _Professor Layton vs. Phoenix Wright: Ace Attorney_ is the latest stop on my [journey](@/blog/2021/2021-04-17-gyakuten-kenji/index.md) to play through all of the Ace Attorney games in Japanese. The latest and by far the greatest! But I should mention its immediate predecessor first to give a bit more context.
