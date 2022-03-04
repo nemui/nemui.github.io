@@ -28,9 +28,9 @@ Well, it is simply wonderful.
 
 Looking back at the first entries made for [GBA](https://en.wikipedia.org/wiki/Game_Boy_Advance) it is hard to believe just how far the series has come. On the other hand, it is still, in its heart, a story. If you like the tone of it, anything else is but a pleasant bonus{{ aside(text="Not sure I'd read a plain text book version, though. Games are cooler books with interactive illustrations.") }}. 
 
-But even the story has matured a lot, got bigger both in depth and breadth, acquired a real _weight_. The Great Ace Attorney had to be split into 2 parts to carry it, and those are not small games by any means. I could have literally sailed to Japan on an antique steam ship in the time it took for me to experience both.
+But even the story has matured a lot, got bigger both in depth and breadth, and acquired a real _weight_. The Great Ace Attorney had to be split into 2 parts to carry it, and those are not small games by any means. I could have literally sailed to Japan on an antique steam ship in the time it took for me to experience both.
  
-The amount of love poured into every detail, every corner of the elaborately constructed virtual space the story inhabits and that you can stick a stilus into is nothing short of saintly. The real world would have come apart at the seams if examined with the same level of scrutiny, but not this world.
+The amount of love poured into every detail, every corner of the elaborately constructed virtual space the story inhabits and that you can stick a stylus into is nothing short of saintly. The real world would have come apart at the seams if examined with the same level of scrutiny, but not this world.
 
 In a way, I did go on a trip, and I'm sitting here now, home at last, exhausted, satisfied, slightly wistful. 
 Honestly, this was a great thing to experience in the middle of the pandemic.
@@ -43,8 +43,8 @@ Other things of note:
 
 All in all, The Great Ace Attorney is the best game in the series so far. Would I be disappointed if no other games appear? _Definitely_. Would I be satisfied with the series going out on such a strong note? _Absolutely_.
 
-I have to admit that Ace Attorney Investigations, Dual Destinies and Spirit of Justice{{ aside(text="The character art & animation were taking to a jaw-dropping new level in Ace Attorney 5 & 6; they are worth playing for that alone. ") }}, on the other hand, read very differently and for me personally were less enjoyable. They are still good games, just don't expect familiar characters to sound, well, familiar.
+I have to admit that Ace Attorney Investigations, Dual Destinies and Spirit of Justice{{ aside(text="The character art & animation were taken to a jaw-dropping new level in Ace Attorney 5 & 6; they are worth playing for that alone. ") }}, on the other hand, read very differently and for me personally were less enjoyable. They are still good games, just don't expect familiar characters to sound, well, familiar.
 
-Playing whole series and retro-gaming in general has worked out well for me, so I will be doing more of that. Currently I am using a refurbished [DSi XL](https://en.wikipedia.org/wiki/Nintendo_DSi#Larger_model){{ aside(text="Despite 3DS being a powerhouse and all, upscaled DS games look better on DSi XL. Or maybe I got too much into collecting retro handhelds, hm.") }} to play through ポケモン不思議のダンジョン - Pokemon Mystery Dungeon - a pretty cool bix of roguelike and Pokemon formulas.
+Playing the whole series and retro-gaming in general has worked out well for me, so I will be doing more of that. Currently I am using a refurbished [DSi XL](https://en.wikipedia.org/wiki/Nintendo_DSi#Larger_model){{ aside(text="Despite 3DS being a powerhouse and all, upscaled DS games look better on DSi XL. Or maybe I got too much into collecting retro handhelds, hm.") }} to play through ポケモン不思議のダンジョン - Pokemon Mystery Dungeon - a pretty cool mix of roguelike and Pokemon formulas.
 
 
