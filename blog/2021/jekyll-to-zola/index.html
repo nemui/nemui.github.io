@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>
+From Jekyll to Zola &middot; nemui
+</title>
+    <link rel="stylesheet" href="https:&#x2F;&#x2F;nemui.github.io&#x2F;slim.css">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet'
+        type='text/css'>
+    
+    
+</head>
+
+<body>
+    <div class="container">
+        
+<div class="header">
+    <h1 class="site-title"><a href="https:&#x2F;&#x2F;nemui.github.io">nemui</a></h1>
+    <p class="site-tagline"></p>
+    <div class="nav">
+        <a class="nav-btn" href="#">
+            <span class="ci ci-burger"></span>
+        </a>
+        <ul class="nav-list">
+            
+            
+            <li><a href="https:&#x2F;&#x2F;nemui.github.io&#x2F;javascript-playthings">js toys</a></li>
+            
+            <li><a href="https:&#x2F;&#x2F;nemui.github.io&#x2F;tags">tags</a></li>
+            
+            
+            <li class="spacer">&ac;</li>
+            
+            
+            <li><a href="https://github.com/nemui">github</a></li>
+            
+            <li><a href="https://twitter.com/DmitryMamchur">twitter</a></li>
+            
+            
+        </ul>
+    </div>
+</div>
+
+        <div class="content">
+            <div class="posts">
+                
+<div class="post">
+    
+    
+<h2 class="post-title"><a href="https:&#x2F;&#x2F;nemui.github.io&#x2F;blog&#x2F;2021&#x2F;jekyll-to-zola&#x2F;">From Jekyll to Zola</a></h2>
+<div class="post-header">
+    
+    <span class="post-date">April 21, 2021</span>
+    
+    
+    <div class="post-tags">
+        
+        <span class="post-tag">#<a href="https://nemui.github.io/tags/jekyll/">jekyll</a></span>
+        
+        <span class="post-tag">#<a href="https://nemui.github.io/tags/rust/">rust</a></span>
+        
+        <span class="post-tag">#<a href="https://nemui.github.io/tags/zola/">zola</a></span>
+        
+    </div>
+    
+</div>
+
+    <div class="post-content">
+        <h2 id="motivation">Motivation</h2>
+<p>The blog has been migrated from <a href="https://jekyllrb.com/">Jekyll</a> to <a href="https://www.getzola.org/">Zola</a> for fun and profit.</p>
+<ul>
+<li>Setting up Jekyll was surprisingly fiddly on Windows - I had to install ruby &amp; msys, then troubleshoot live reloading. On the other hand, Zola is a single executable that <em>just works</em></li>
+<li>My next job is going to involve a lot of <a href="https://www.rust-lang.org/">Rust</a> - I thought I'd get used to things like <a href="https://github.com/toml-lang/toml">TOML</a>!</li>
+<li>It's something new and hence - wonderful<sup>†</sup><span class="aside"><sup>†</sup>There is a book by Soviet-era poet Daniil Kharms titled 'Я думал о том, как прекрасно всё первое!' - 'I thought about how wonderful is everything [first/new]!'</span></li>
+</ul>
+<h2 id="migration">Migration</h2>
+<p>After creating a brand new site with  <code>zola init myblog</code>, I have added <a href="https://www.getzola.org/themes/slim/">Slim</a> theme as a <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">git submodule</a>, copied over my posts, converted variables from <a href="https://en.wikipedia.org/wiki/YAML">YAML</a> to TOML and... that's mostly it.</p>
+<h3 id="automatic-deployment">Automatic deployment</h3>
+<p>I make use of <a href="https://github.com/features/actions">Github Actions</a> just like in the <a href="https://www.getzola.org/documentation/deployment/github-pages/">docs</a>, except that checkout needs <code>submodules: true</code> due to how the theme is added as a git submodule. </p>
+<h3 id="blog-structure">Blog structure</h3>
+<p>Grouping posts by year and making each year section transparent so that everything is aggregated in the parent <code>blog</code> section is super neat! The only problem I had was with <a href="https://nemui.github.io/javascript-playthings/">javascript playthings</a> page. To make it <em>not</em> appear in the list of regular posts, I had to add <code>sort_by = &quot;date&quot;</code> to the root <code>_index.md</code>, then delete the date field from the javascript <code>index.md</code>. Oh, well!</p>
+<img src="structure.png" alt="Content folder structure" title="All posts are grouped by year and make use of asset colocation">
+<h3 id="marginal-notes">Marginal notes</h3>
+<p>Lifted pretty much verbatim from <a href="https://kennethfriedman.org/thoughts/2019/marginal-notes/">here</a>. I love them!</p>
+<h3 id="theme-tweaks">Theme tweaks</h3>
+<ul>
+<li>Mobile-friendly list of posts - I have discovered it doesn't look so good with long titles/many tags by default</li>
+<li>Modified template for post header to allow <code>null</code> date in pages</li>
+<li>Removed circles under emphasized text </li>
+</ul>
+<p>The second one was the most cumbersome, as I had to modify a macro that is responsible for post headers. It was done in 2 steps:</p>
+<ol>
+<li>First, create <code>templates/custom_macros.html</code> with a modified version of <code>post_header</code> macro from <code>themes/slim/templates/macros.html</code></li>
+<li>Second, create <code>templates/page.html</code> that extends <code>themes/slim/templates/page.html</code>, to import <code>custom_macros.html</code> and use its version of the <code>post_header</code> inside <code>{% block content %}</code> </li>
+</ol>
+<p>The rest was just copying <code>slim.css</code> from <code>themes/slim/sass/</code> to <code>sass/</code> and changing what I needed.</p>
+<h2 id="what-s-next">What's next?</h2>
+<p>I have been toying with an idea of adding a comment section. Something suitable for a static website while being less intrusive than <a href="https://disqus.com/">Disqus</a>. Perhaps <a href="https://posativ.org/isso/">Isso</a>? Seems like fiddling with a blog is at least as fun as writing it.</p>
+
+    </div>
+    
+    
+</div>
+
+            </div>
+            
+        </div>
+        
+<div class="footer">
+    
+    <p>Powered by <a href="https://getzola.org">Zola</a></p>
+    
+</div>
+
+    </div>
+    <script src="https:&#x2F;&#x2F;nemui.github.io&#x2F;js&#x2F;slim.js"></script>
+    
+</body>
+
+</html>

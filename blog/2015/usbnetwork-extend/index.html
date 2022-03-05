@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>
+USBNetwork and Extend &middot; nemui
+</title>
+    <link rel="stylesheet" href="https:&#x2F;&#x2F;nemui.github.io&#x2F;slim.css">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet'
+        type='text/css'>
+    
+    
+</head>
+
+<body>
+    <div class="container">
+        
+<div class="header">
+    <h1 class="site-title"><a href="https:&#x2F;&#x2F;nemui.github.io">nemui</a></h1>
+    <p class="site-tagline"></p>
+    <div class="nav">
+        <a class="nav-btn" href="#">
+            <span class="ci ci-burger"></span>
+        </a>
+        <ul class="nav-list">
+            
+            
+            <li><a href="https:&#x2F;&#x2F;nemui.github.io&#x2F;javascript-playthings">js toys</a></li>
+            
+            <li><a href="https:&#x2F;&#x2F;nemui.github.io&#x2F;tags">tags</a></li>
+            
+            
+            <li class="spacer">&ac;</li>
+            
+            
+            <li><a href="https://github.com/nemui">github</a></li>
+            
+            <li><a href="https://twitter.com/DmitryMamchur">twitter</a></li>
+            
+            
+        </ul>
+    </div>
+</div>
+
+        <div class="content">
+            <div class="posts">
+                
+<div class="post">
+    
+    
+<h2 class="post-title"><a href="https:&#x2F;&#x2F;nemui.github.io&#x2F;blog&#x2F;2015&#x2F;usbnetwork-extend&#x2F;">USBNetwork and Extend</a></h2>
+<div class="post-header">
+    
+    <span class="post-date">December 15, 2015</span>
+    
+    
+    <div class="post-tags">
+        
+        <span class="post-tag">#<a href="https://nemui.github.io/tags/kindleberrypi/">kindleberrypi</a></span>
+        
+        <span class="post-tag">#<a href="https://nemui.github.io/tags/kindle/">kindle</a></span>
+        
+        <span class="post-tag">#<a href="https://nemui.github.io/tags/ssh/">ssh</a></span>
+        
+        <span class="post-tag">#<a href="https://nemui.github.io/tags/raspberrypi/">raspberrypi</a></span>
+        
+    </div>
+    
+</div>
+
+    <div class="post-content">
+        <p>Last time <a href="https://nemui.github.io/blog/2015/kindle-jailbreak/">we performed a jailbreak</a> on our Kindle and installed a bunch of wonderful extensions. Now it's time to go deeper into the innards of the liberated e-reader and extend its capabilities even further.</p>
+<ol>
+<li>
+<p>Connecting to the Kindle via SSH from Raspberry Pi</p>
+<p>On Kindle, fire up KUAL and select <em>USBNetwork</em> -&gt; <em>* Toggle USBNetwork *</em>.
+Plug your Kindle into Raspberry Pi via USB (I'm assuming you have a 
+working Raspberry Pi set up already, with keyboard/mouse, a monitor 
+and a wifi dongle). Since mass storage mode is incompatable with SSH, 
+eject Kindle.</p>
+<p>Now on Raspberry Pi:</p>
+<pre><code> # ifconfig usb0 192.168.15.201
+</code></pre>
+<p>Test if you can connect via SSH yet:</p>
+<pre><code> # ssh root@192.168.15.201
+</code></pre>
+<p>It will ask for a password, just hit Enter. You are in! Well, at least you should be. Refer to the enclosed README_FIRST in USBNetwork folder  if you are in trouble.</p>
+</li>
+<li>
+<p>Make your future logins more swoosh with shared keys</p>
+<p>First, let's get rid of 192.168.15.201 by adding this line to your /etc/hosts:</p>
+<ol start="192">
+<li>168.15.244 kindle</li>
+</ol>
+<p>Now on to the keys themselves:</p>
+<pre><code> cd ~/.ssh
+ ssh-keygen -C &quot;Our Kindle key&quot; -f id_kindle
+</code></pre>
+<p>Enter your favorite passphrase. You should have id_kindle and id_kindle.pub. Let's copy your public key to the Kindle:</p>
+<pre><code> scp id_kindle.pub root@kindle:/mnt/us/usbnet/etc/authorized_keys
+</code></pre>
+<p>That's it! To make SSHing even more automatic, try things with ssh agent and keychain.</p>
+</li>
+<li>
+<p>Install Extend</p>
+<p>Extend (<a href="http://www.mobileread.com/forums/showthread.php?t=161704">home</a>) - additional command line tools, most importantly - ssh client, which is crucial for our end goal. </p>
+<ul>
+<li>
+<p><a href="http://ge.tt/9Qoa9YD/v/2">Download</a> Extend</p>
+<p>Place extend and extensions folder in the root directory of your Kindle. You can do it either via usual USB connection or through SSH.</p>
+</li>
+<li>
+<p>Next, connect to your Kindle via SSH and execute following commands:</p>
+<pre><code>  # ./mnt/us/install.sh
+  # ln -s /mnt/us/circles/mountd /etc/rc5.d/S101mountd
+</code></pre>
+<p>That should be it. We are now ready for the final step on this rather dragged out journey to Kindleberry Pi. </p>
+</li>
+</ul>
+</li>
+</ol>
+
+    </div>
+    
+    
+</div>
+
+            </div>
+            
+        </div>
+        
+<div class="footer">
+    
+    <p>Powered by <a href="https://getzola.org">Zola</a></p>
+    
+</div>
+
+    </div>
+    <script src="https:&#x2F;&#x2F;nemui.github.io&#x2F;js&#x2F;slim.js"></script>
+    
+</body>
+
+</html>
